@@ -1,0 +1,62 @@
+/* Header Component Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+header {
+  background-color:hsl(54, 67%, 75%); /* Background color of the header */
+  padding: 10px 0; /* Spacing inside the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff; /* Text color */
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo h2{
+  margin-left: 10px;
+  color: black;
+}
+
+.logo img {
+  
+  border-radius: 70%;
+
+  margin-left: 50px;
+  width: 100px; /* Adjust the width of your logo image */
+  height: 100px;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+
+  /* Spacing between navigation links */
+}
+
+nav a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  text-decoration: none;
+  color: black;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+nav a:hover {
+  box-shadow: inset 100px 100px 0 0 #0a4b00;
+  color: white;
+  /* Change text color on hover (you can choose any color you like) */
+}

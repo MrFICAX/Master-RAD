@@ -1,0 +1,115 @@
+.horizontal-form {
+  display: flex;
+}
+
+.vertical-form{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+
+  width: 30%;
+}
+
+.search-vertical-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.pet-results{
+  width: 70%;
+}
+
+.horizontal-form .form-group {
+  flex: 1;
+
+  /* Adjust as needed */
+}
+
+.searchfield {
+  width: 100px;
+  height: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.search-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hybrid-search-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* .clickable-map-form{
+  height: 100%;
+} */
+
+.search-container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+
+input[type="submit"]:hover {
+  /* Change background color */
+  background-color: #005129; /* Change this color to your desired hover color */
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.parent {
+  width: 100%;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 25px;
+
+}
+
+.file-upload {
+  text-align: center;
+  border: 3px dashed rgb(210, 227, 244);
+  position: relative;
+  cursor: pointer;
+}
+
+.file-upload p {
+  font-size: 0.87rem;
+  margin-top: 10px;
+  color: #bbcada;
+}
+
+.file-upload input {
+  display: block;
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+  
+}

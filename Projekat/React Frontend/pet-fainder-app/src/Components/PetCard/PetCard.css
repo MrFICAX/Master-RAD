@@ -1,0 +1,81 @@
+/* Checkbox container */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style the custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+/* .checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* styles.css */
+.card {
+  text-align: center; /* tc */
+  background-color: hsl(54, 67%, 75%); /* bg-light-green */
+  display: inline-block; /* dib */
+  border-radius: 8px; /* br3 - br3 generally represents a certain border radius, e.g., 8px */
+  padding: 16px; /* pa3 - pa3 generally represents a certain padding, e.g., 16px */
+  margin: 8px; /* ma2 - ma2 generally represents a certain margin, e.g., 8px */
+  transition: transform 0.2s; /* grow - add transition for the grow effect */
+  border-width: 12px; /* bw2 - bw2 generally represents a certain border width, e.g., 2px */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow-5 */
+}
+
+.card:hover {
+  transform: scale(1.05); /* grow */
+}
+
+.map-with-overlay{
+  margin: 5px;
+}
